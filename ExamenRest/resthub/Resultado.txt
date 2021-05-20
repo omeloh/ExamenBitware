@@ -1,0 +1,102 @@
+POST
+http://localhost:8080/api/NutriNET/Cliente/
+{
+    "Cve_Error": "0",
+    "Cve_Mensaje": "Contacto Agregado Correctamente",
+    "data": {
+        "Fecha_Creacion": "2021-05-18T23:42:35.063Z",
+        "Nombre_Usuario": "Om",
+        "Contrasena": "omelo",
+        "Nombre": "Oscar",
+        "Apellidos": "Melo Herrera",
+        "Correo_Electronico": "omeloh@hotmail.com",
+        "_id": 6,
+        "__v": 0
+    }
+}
+
+
+GET
+
+BY ID
+http://localhost:8080/api/NutriNET/Cliente/6
+{
+    "Cve_Error": "0",
+    "Cve_Mensaje": "Contacto Encontrado",
+    "data": {
+        "_id": 6,
+        "Fecha_Creacion": "2021-05-18T23:42:35.063Z",
+        "Nombre_Usuario": "Om",
+        "Contrasena": "omelo",
+        "Nombre": "Oscar",
+        "Apellidos": "Melo Herrera",
+        "Correo_Electronico": "omeloh@hotmail.com",
+        "__v": 0
+    }
+}
+
+Todos
+{
+    "Cve_Error": "0",
+    "Cve_Mensaje": "Consulta de contactos",
+    "data": [
+        {
+            "_id": 4,
+            "Fecha_Creacion": "2021-05-18T23:32:53.908Z",
+            "Nombre_Usuario": "Ju",
+            "Contrasena": "juanitoperez",
+            "Nombre": "Juan",
+            "Apellidos": "Perez Hernandez",
+            "Correo_Electronico": "jperez@hotmail.com",
+            "__v": 0,
+            "Edad": 39,
+            "Estatura": 1.8,
+            "GEB": 1500,
+            "Peso": 60
+        },
+        {
+            "_id": 5,
+            "Fecha_Creacion": "2021-05-18T23:33:06.204Z",
+            "Nombre_Usuario": "Ju",
+            "Contrasena": "juanitoperez",
+            "Nombre": "Juan2",
+            "Apellidos": "Perez Hernandez",
+            "Correo_Electronico": "jperez@hotmail.com",
+            "__v": 0
+        },
+        {
+            "_id": 6,
+            "Fecha_Creacion": "2021-05-18T23:42:35.063Z",
+            "Nombre_Usuario": "Om",
+            "Contrasena": "omelo",
+            "Nombre": "Oscar",
+            "Apellidos": "Melo Herrera",
+            "Correo_Electronico": "omeloh@hotmail.com",
+            "__v": 0
+        }
+    ]
+}
+
+
+
+PUT
+http://localhost:8080/api/NutriNET/Cliente/4
+
+{
+    "Cve_Error": "0",
+    "Cve_Mensaje": "Contacto Actualizado",
+    "data": {
+        "_id": 4,
+        "Fecha_Creacion": "2021-05-18T23:32:53.908Z",
+        "Nombre_Usuario": "Ju",
+        "Contrasena": "juanitoperez",
+        "Nombre": "Juan",
+        "Apellidos": "Perez Hernandez",
+        "Correo_Electronico": "jperez@hotmail.com",
+        "__v": 0,
+        "Edad": 39,
+        "Estatura": 1.8,
+        "Peso": 60,
+        "GEB": 1500
+    }
+}
